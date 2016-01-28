@@ -1,0 +1,22 @@
+.ribbonBannr div {
+    background-color: rgb(247, 64, 123);
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: auto;
+    display: block;
+    font-size: 17.55px;
+    height: 28px;
+    line-height: 28px;
+    position: relative;
+    text-align: center;
+    width: auto;
+    z-index: 100;
+}
+a.ribbonBannr:hover {
+    text-decoration: none;
+}
+
+a.my-tool-tip, a.my-tool-tip:hover, a.my-tool-tip:visited {
+
+    color: red;
+}
