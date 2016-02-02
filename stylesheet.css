@@ -20,30 +20,16 @@ a.ribbonBannr:hover {
     text-decoration: none;
 }
 
-a.user, a.user:visited {
-    color: darkgrey;
-}
-a.user:hover {
-    color: grey;
-}
-.user {
-    font-size: 25px;
-}
-
-a.cart, a.cart:visited {
-    color: darkgrey;
-}
-
-a.cart:hover {
-    color: grey;
-}
-
 .cart {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .boxheader {
     background-color: white;
     width: auto;
-    height: 300px ;
+    height: 300px;
+}
+
+.headertext {
+    padding-top: 4px;
 }
