@@ -1,5 +1,5 @@
 body {
-    background-image: url("wild_flowers.png");
+    background-color: #f1bfc5;
     background-repeat: repeat;
 }
 .ribbonBannr div {
@@ -25,11 +25,25 @@ a.ribbonBannr:hover {
 }
 
 .boxheader {
-    background-color: white;
+    background-image: url("wild_flowers.png");
     width: auto;
     height: 300px;
 }
 
 .headertext {
     padding-top: 4px;
+}
+.images {
+    width: 200px;
+    height: 225px;
+    border: 2px solid #821C1C;
+    border-radius: 24px;
+}
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+.navbar .navbar-collapse {
+    text-align: center;
 }
