@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: session1
- * Date: 2/3/16
- * Time: 3:05 PM
- */
+
 if($_POST['search']){
     $sql = "select * from products where category like '%{$_POST['search']}%'";
 

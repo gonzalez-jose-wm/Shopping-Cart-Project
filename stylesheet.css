@@ -1,6 +1,5 @@
 body {
     background-color: #f1bfc5;
-    background-repeat: repeat;
 }
 .ribbonBannr div {
     background-color: rgb(247, 64, 123);
@@ -22,10 +21,11 @@ a.ribbonBannr:hover {
 
 .cart {
     font-size: 20px;
+
 }
 
 .boxheader {
-    background-image: url("wild_flowers.png");
+    background-color: white;
     width: auto;
     height: 300px;
 }

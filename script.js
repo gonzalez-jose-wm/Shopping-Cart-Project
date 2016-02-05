@@ -1,1 +1,0 @@
-$("a.my-tool-tip").tooltip();
