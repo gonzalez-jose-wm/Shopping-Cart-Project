@@ -1,9 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8"> <!-- tell internet to use the latest rendering engine -->
     <meta http-eqiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width = device-width, initial- scle = 1">
-    <title>Sign in</title>
+    <title>Signup</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="loginstyle.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -36,18 +37,7 @@
         });
     </script>
 </head>
-<body>
 
-
-<!--
-<a class="ribbonBannr" href="index.html">
-    <div>
-        <img style="float: left;" src="//assets.teleflora.com/images/banners/pink-banner-left.gif" alt="left side image" width="18" height="28">
-        <img style="float: right;" src="//assets.teleflora.com/images/banners/pink-banner-right.gif" alt="right side image" width="18" height="28">
-        <p> Same Day and Next Day Delivery Available On All Bouquets! Shop Now » </p>
-    </div>
-</a>
--->
 
 <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -86,6 +76,7 @@
     </div>
 
 </nav>
+
 <div id="login-overlay" class="modal-dialog">
     <div class="modal-content">
         <div class="modal-header">
@@ -93,64 +84,57 @@
         </div>
 
         <div class="modal-body">
+
             <div class="row">
-                <div class="col-xs-6">
+
+                <div class="col-lg-12">
+
                     <div class="well">
 
-                        <!-- Login setup-->
+                        <h2>Sign Up!</h2>
 
-                        <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
-                            <div class="form-group">
-                                <label for="email" class="control-label">Email</label>
-                                <input type="text" class="form-control" id="email" name="email" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
-                                <span class="help-block"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="password" class="control-label">Password</label>
-                                <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
-                                <span class="help-block"></span>
-                            </div>
-                            <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+                        <img src="blossoms.png" style="width: 220px;float: right;margin-right: 26px;">
+                        <form style="margin-top: 10px;">
 
-                            <button type="submit" class="btn btn-success btn-block">Login</button>
+                            <label>First Name</label><br>
+
+                            <input type="text" name="firstname" class="span3"><br>
+
+                            <label>Last Name</label><br>
+
+                            <input type="text" name="lastname" class="span3"><br>
+
+                            <label>Email Address</label><br>
+
+                            <input type="email" name="email" class="span3"><br>
+
+                            <label>Username</label><br>
+
+                            <input type="text" name="username" class="span3"><br>
+
+                            <label>Password</label><br>
+
+                            <input type="password" name="password" class="span3"><br>
+
+                            <label><input type="checkbox" name="terms"> I agree with the <a href="https://termsfeed.com/legal/terms-of-use">Terms and Conditions</a>.</label>
+
+                            <input type="submit" value="Sign up" class="btn btn-primary pull-right" style="margin-bottom: 20px; margin-right: 20px;">
+
+                            <div class="clearfix"></div>
+
                         </form>
-                    </div>
-                </div>
 
-                <div class="col-xs-6">
-                    <p class="lead">Register now for <span class="text-success">FREE</span></p>
-                    <ul class="list-unstyled" style="line-height: 2">
-                        <li> See all your orders</li>
-                        <li> Great gifts for your love ones</li>
-                        <li> Fast checkout</li>
-                        <li> Beautiful flowers</li>
-                    </ul>
-                    <p> <a href="signup.html" class="btn btn-info btn-block">Yes please, register now!</a> </p>
+                        <div class="panel-footer" style="margin-top: 10px;">
+                            Don't have an account! <a href="signup.html" onClick=""> Sign Up Here </a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-
-
-
-<a class='user' data-toggle="user" data-placement="right" title="Signin / Sign up" href="index.html">
-    <span class='glyphicon glyphicon-user'> </span>
-</a>
-<a class='cart' data-toggle="user" data-placement="right" title="Check Out" href="index.html">
-    <span class='glyphicon glyphicon-shopping-cart'></span>
-</a>
-
-
-<script>
-    $(document).ready(function(){
-        $('[data-toggle="user"]').tooltip();
-    });
-    $(document).ready(function(){
-        $('[data-toggle="cart"]').tooltip();
-    });
-</script>
 
 </body>
 </html>

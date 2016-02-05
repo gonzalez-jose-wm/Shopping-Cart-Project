@@ -1,0 +1,14 @@
+body {
+    background-color: #f1bfc5;
+}
+.navbar .navbar-nav {
+     display: inline-block;
+     float: none;
+     vertical-align: top;
+ }
+.navbar .navbar-collapse {
+    text-align: center;
+}
+.label {
+    margin-top: 10px;
+}

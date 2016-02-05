@@ -1,6 +1,5 @@
 body {
-    background-image: url("wild_flowers.png");
-    background-repeat: repeat;
+    background-color: #f1bfc5;
 }
 .ribbonBannr div {
     background-color: rgb(247, 64, 123);
@@ -20,30 +19,31 @@ a.ribbonBannr:hover {
     text-decoration: none;
 }
 
-a.user, a.user:visited {
-    color: darkgrey;
-}
-a.user:hover {
-    color: grey;
-}
-.user {
-    font-size: 25px;
-}
-
-a.cart, a.cart:visited {
-    color: darkgrey;
-}
-
-a.cart:hover {
-    color: grey;
-}
-
 .cart {
-    font-size: 25px;
+    font-size: 20px;
+
 }
 
 .boxheader {
     background-color: white;
     width: auto;
-    height: 300px ;
+    height: 300px;
+}
+
+.headertext {
+    padding-top: 4px;
+}
+.images {
+    width: 200px;
+    height: 225px;
+    border: 2px solid #821C1C;
+    border-radius: 24px;
+}
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+.navbar .navbar-collapse {
+    text-align: center;
 }

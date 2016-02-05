@@ -1,0 +1,139 @@
+<html>
+<head>
+    <meta charset="UTF-8"> <!-- tell internet to use the latest rendering engine -->
+    <meta http-eqiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial- scle = 1">
+    <title>Show</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            var availableTags = [
+                "About",
+                "Check Out",
+                "Cart",
+                "Contact Info",
+                "Frequently Asked Question",
+                "Personal Profile",
+                "Producta Page",
+                "Home",
+                "Valentine",
+                "Wedding",
+                "Birthday",
+                "Sympathy",
+                "Graduation",
+                "Just Because",
+            ];
+            $( "#tags" ).autocomplete({
+                source: availableTags
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div class="boxheader">
+    <center>
+        <div class="headertext">
+
+        <p>5405 N 99th Ave., Glendale, AZ 85305
+
+            <a class='cart' href="index.html">
+                <span class='glyphicon glyphicon-user'> </span>
+                <span class='glyphicon glyphicon-shopping-cart'> </span>
+            </a> (0) cart
+        </p>
+
+        </div>
+
+
+        <img src="blossoms.png" style="width: 220px;">
+
+    </center>
+
+
+    <nav class="navbar navbar-default" style="margin-top: 26px">
+
+
+
+        <div class="container-fluid">
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-center">
+                    <li class="active"><a href="test.html">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="unavailable.html">Valentine</a></li>
+                    <li><a href="unavailable.html">Wedding</a></li>
+                    <li><a href="unavailable.html">Birthday</a></li>
+                    <li><a href="unavailable.html">Sympathy</a></li>
+                    <li><a href="unavailable.html">Graduation</a></li>
+                    <li><a href="unavailable.html">Just Because</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">About</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Frequently Asked Questions</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="navbar-form navbar-right" role="search" method="post" action="search.php">
+                    <div class="ui-widget">
+                        <label for="tags"> </label>
+                        <input id="tags" name="search" class="form-control">
+                        <button type="submit" class="btn btn-default">Search</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </nav>
+
+
+
+
+</div>
+<div class="container">
+
+
+<div class="jumbotron">
+    <center>
+        <img src="flowers.jpg" style="
+    width: 800px;
+    height: 500px;
+">
+        </center>
+<div class="row" style="text-align: center">
+    <div class="col-md-3">
+        <img class="images" src="http://cupidovalentine.com/wp-content/uploads/2016/01/Valentines-Day-Flowers-1.jpg"> <p><strike>$100</strike> <i>75$</i> </p>
+    </div>
+
+    <div class="col-md-3">
+        <img class="images" src="https://www.ftdimg.com/pics/products/B20-4798_330x370_premium.jpg"> <p><strike>$100</strike> <i>75$</i></p>
+    </div>
+
+    <div class="col-md-3">
+        <img class="images" src="http://southbaybuys.com/wp-content/uploads/2013/01/Valentines-Day-Flowers.jpg"> <p><strike>$100</strike> <i>75$</i></p>
+    </div>
+
+    <div class="col-md-3">
+        <img class="images" src="https://sf.tac-cdn.net/images/products/large/BF104-11K.jpg"> <p><strike>$100</strike> <i>75$</i></p>
+    </div>
+
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
