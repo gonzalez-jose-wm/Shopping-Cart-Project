@@ -68,8 +68,8 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-center">
-                    <li class="active"><a href="home.html">Home <span class="sr-only">(current)</span></a></li>
-                    <li><a href="unavailable.html">Valentine</a></li>
+                    <li><a href="home.html">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="valentine.html">Valentine</a></li>
                     <li><a href="unavailable.html">Wedding</a></li>
                     <li><a href="unavailable.html">Birthday</a></li>
                     <li><a href="unavailable.html">Sympathy</a></li>
@@ -135,6 +135,23 @@
 </div>
 </div>
 
+
+<a class='user' data-toggle="user" data-placement="right" title="Signin / Sign up" href="index.html">
+    <span class='glyphicon glyphicon-user'> </span>
+</a>
+<a class='cart' data-toggle="user" data-placement="right" title="Check Out" href="index.html">
+    <span class='glyphicon glyphicon-shopping-cart'></span>
+</a>
+
+
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="user"]').tooltip();
+    });
+    $(document).ready(function(){
+        $('[data-toggle="cart"]').tooltip();
+    });
+</script>
 
 </body>
 </html>
