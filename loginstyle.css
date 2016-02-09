@@ -12,3 +12,11 @@ body {
 .label {
     margin-top: 10px;
 }
+.header {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.header:hover {
+    color: #e2abb2;
+}
