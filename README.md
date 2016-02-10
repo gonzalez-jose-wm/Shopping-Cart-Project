@@ -19,9 +19,9 @@ Design a multi-page website with the following page designations:
 
 Home page *
 About *
-Contact info
-Products page
-Shopping cart
+Contact info *
+Products page *
+Shopping cart 
 Checkout
 Frequently Asked Questions
 Personal Profile
