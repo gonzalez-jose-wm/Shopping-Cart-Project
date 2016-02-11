@@ -1,34 +1,39 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "mydb";
+require_once ('connect.php');
+$error = false;
+$success = false;
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+if(@$_POST['signup']){
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-echo "Connected successfully";
-
-if (! empty($_POST['firstname'])) {
-    $first = $_POST['firstname'];
-}
-
-function signUp () {
-
-    $sql = "INSERT INTO user (email, firstname, lastname, username, password)
-    VALUES ('john@example.com', 'john', 'gonzalez', 'john123', 'classof2016')";
-
-    if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+    if(!$_POST['firstname']){
+        $error .= '<p>First name is required field!</p>';
     }
+
+    if(!$_POST['lastname']){
+        $error .= '<p>Last name is required field!</p>';
+    }
+    if(!$_POST['username']){
+        $error .= '<p>Username is required field!</p>';
+    }
+    if(!$_POST['email']){
+        $error .= '<p>Email is required field!</p>';
+    }
+    if(!$_POST['password']){
+        $error .= '<p>Email is required field!</p>';
+    }
+    $query = $con->prepare("INSERT INTO mydb (UserNameID, firstname, lastname, username, email, password)");
+    $stmt = $stmt->execute(
+        array(
+            'id' => NULL
+            'username' => $_POST['']
+        )
+
+
+
+    )
+
 }
-    $conn->close();
+
 ?>
 
 
@@ -56,7 +61,7 @@ function signUp () {
                 "Contact Info",
                 "Frequently Asked Question",
                 "Personal Profile",
-                "Producta Page",
+                "Products Page",
                 "Home",
                 "Valentine",
                 "Wedding",
@@ -86,6 +91,8 @@ function signUp () {
                 <li><a href="unavailable.html">Sympathy</a></li>
                 <li><a href="unavailable.html">Graduation</a></li>
                 <li><a href="unavailable.html">Just Because</a></li>
+                <li><a href="cart.html">Cart <span class='glyphicon glyphicon-shopping-cart'></span></a></li>
+
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other <span class="caret"></span></a>
@@ -129,7 +136,7 @@ function signUp () {
 
                         <img src="blossoms.png" style="width: 220px;float: right;margin-right: 26px;">
 
-                        <form method="post" style="margin-top: 10px;">
+                        <form method="post" name="signup" style="margin-top: 10px;">
 
                             <label>First Name</label><br>
 
