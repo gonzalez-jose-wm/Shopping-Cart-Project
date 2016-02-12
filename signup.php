@@ -97,10 +97,10 @@ if(@$_POST['signup']){
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">About</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Frequently Asked Questions</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="faq.html">Frequently Asked Questions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </li>
             </ul>

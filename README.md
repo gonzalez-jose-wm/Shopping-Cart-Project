@@ -21,10 +21,10 @@ Home page *
 About *
 Contact info *
 Products page *
-Shopping cart 
-Checkout
-Frequently Asked Questions
-Personal Profile
+Shopping cart *
+Checkout 
+Frequently Asked Questions *
+Personal Profile 
 
 **Build a simple one page product list that has no fewer than 9 (a 3 by 3 image table), products and prices.**
 
