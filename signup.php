@@ -89,10 +89,10 @@ $result = $stmt->execute(
                 <li><a href="home.html">Home</a></li>
                 <li><a href="valentine.html">Valentine</a></li>
                 <li><a href="Wedding.html">Wedding</a></li>
-                <li><a href="unavailable.html">Birthday</a></li>
-                <li><a href="unavailable.html">Sympathy</a></li>
-                <li><a href="unavailable.html">Graduation</a></li>
-                <li><a href="unavailable.html">Just Because</a></li>
+                <li><a href="birthday.html">Birthday</a></li>
+                <li><a href="sympathy.html">Sympathy</a></li>
+                <li><a href="graduation.html">Graduation</a></li>
+                <li><a href="just.html">Just Because</a></li>
                 <li><a href="cart.html">Cart <span class='glyphicon glyphicon-shopping-cart'></span></a></li>
 
 
