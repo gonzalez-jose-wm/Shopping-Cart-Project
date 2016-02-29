@@ -86,7 +86,7 @@ $(function() {
             <ul class="nav navbar-nav navbar-center">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="valentine.html">Valentine</a></li>
-                <li><a href="unavailable.html">Wedding</a></li>
+                <li><a href="Wedding.html">Wedding</a></li>
                 <li><a href="unavailable.html">Birthday</a></li>
                 <li><a href="unavailable.html">Sympathy</a></li>
                 <li><a href="unavailable.html">Graduation</a></li>
