@@ -5,6 +5,8 @@ body {
      display: inline-block;
      float: none;
      vertical-align: top;
+
+
  }
 .navbar .navbar-collapse {
     text-align: center;
@@ -16,4 +18,8 @@ body {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.navbar-default{
+    border-radius: 0px;
 }

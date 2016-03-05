@@ -22,5 +22,9 @@ body {
     vertical-align: top;
 }
 .navbar .navbar-collapse {
-    text-align: center;
+    text-align: center;q
+}
+
+.navbar-default{
+    border-radius: 0px;
 }
