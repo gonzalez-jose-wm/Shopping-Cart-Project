@@ -1,5 +1,5 @@
 body {
-    background-color: #f1bfc5;
+    background-color: #D5829C;
 }
 .navbar .navbar-nav {
      display: inline-block;
@@ -16,7 +16,4 @@ body {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-.header:hover {
-    color: #e2abb2;
 }
