@@ -23,3 +23,6 @@ body {
 .navbar-default{
     border-radius: 0px;
 }
+.navbar-nav>li>a {
+    padding-top: 16px;
+}

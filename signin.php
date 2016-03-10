@@ -1,41 +1,21 @@
 <?php
 
-require_once ('connect.php');
-$error = false;
-$success = false;
+$dbc = new PDO('mysql:host=localhost;dbname=mydb', 'root', 'root');
 
-if(@$_POST['button']) {
- //if else statment for login. get table name (user ) variable.//
-    $stmt = $dbh->prepare('INSERT INTO users (
-        email,
-        firstname,
-        lastname,
-        username,
-        password)
+$query = $dbc->prepare("INSERT INTO users (usersId, email, first_name, last_name, username, password)  VALUES (:first_name, :last_name, :email)");
 
-        VALUES (
-        :email,
-        :firstname,
-        :lastname,
-        :username,
-        :password)');
 
-    $result = $stmt->execute(
-        array(
-            'email' =>$_POST['email'],
-            'firstname' =>$_POST['firstname'],
-            'lastname' =>$_POST['lastname'],
-            'username' =>$_POST['username'],
-            'password' =>$_POST['password'],
-        )
-    );
-    if ($result) {
-        $success = $_POST['username'] . " was successfully saved.";
-    } else {
-        "There is a problem bro " . $_POST['username'];
-    }
+$query->execute(
+    array(
+        'first_name' => $_POST['firstname'],
+        'last_name' => $_POST['lastname'],
+        'email' => $_POST['email'],
+    )
 
-}
+);
+
+echo 'Customer added.';
+
 
 
 
